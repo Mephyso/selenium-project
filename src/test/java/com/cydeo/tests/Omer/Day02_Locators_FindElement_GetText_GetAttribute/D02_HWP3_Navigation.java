@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class HWP3_Navigation {
+public class D02_HWP3_Navigation {
     public static void main(String[] args) {
 
         //TC #3: Back and forth navigation

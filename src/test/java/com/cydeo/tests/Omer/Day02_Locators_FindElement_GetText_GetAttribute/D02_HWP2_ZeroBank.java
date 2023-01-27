@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class HWP2_ZeroBank {
+public class D02_HWP2_ZeroBank {
     public static void main(String[] args) {
 
         //HWP #2: Zero Bank header verification

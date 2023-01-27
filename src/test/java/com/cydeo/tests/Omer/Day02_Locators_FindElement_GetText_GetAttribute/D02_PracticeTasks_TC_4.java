@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class PracticeTasks_TC_4 {
+public class D02_PracticeTasks_TC_4 {
     public static void main(String[] args) throws InterruptedException {
 
         //TC #4: Library verifications

@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class PracticeTasks_TC_2 {
+public class D02_PracticeTasks_TC_2 {
     public static void main(String[] args) {
 
         //TC #2: Back and forth navigation

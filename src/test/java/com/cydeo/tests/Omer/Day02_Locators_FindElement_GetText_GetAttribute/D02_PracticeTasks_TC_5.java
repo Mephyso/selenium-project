@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class PracticeTasks_TC_5 {
+public class D02_PracticeTasks_TC_5 {
     public static void main(String[] args) {
 
         //TC #5: getText() and getAttribute() method practice
