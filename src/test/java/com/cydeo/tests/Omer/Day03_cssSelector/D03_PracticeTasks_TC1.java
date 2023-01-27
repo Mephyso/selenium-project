@@ -1,5 +1,6 @@
 package com.cydeo.tests.Omer.Day03_cssSelector;
 
+import com.cydeo.utilities.WebDriverTools;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -34,9 +35,8 @@ public class D03_PracticeTasks_TC1 {
         //6- Verify error message text is as expected:
         System.out.println(driver.findElement(By.className("errortext")).getText());
         //Expected: Incorrect login or password
-        if (driver.findElement(By.className("errortext")).getText().equals("Incorrect login or password"))
-            System.out.println("Error text verification PASSED.");
-        else System.out.println("Error text verification FAILED.");
+        String control= driver.findElement(By.className("errortext")).getText();
+        WebDriverTools.Verification(control, "Incorrect login or password","Error text ");
 
         driver.quit();
     }

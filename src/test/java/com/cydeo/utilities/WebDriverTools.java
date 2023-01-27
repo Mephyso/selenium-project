@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class WebDriverFactory
+public class WebDriverTools
 {
     public static WebDriver getDriver(String browserType)
     {
@@ -40,5 +40,10 @@ public class WebDriverFactory
             return driver;
         }
         else return null;
+    }
+
+    public static void Verification (String controlValue, String expectedValue, String toVerify){
+        if (controlValue.equals(expectedValue)) System.out.println("Verification of "+toVerify+" PASSED.");
+        else System.out.println("Verification of "+toVerify+" FAILED.");
     }
 }
