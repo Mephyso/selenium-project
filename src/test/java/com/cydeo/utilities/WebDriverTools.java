@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import java.time.Duration;
+
 public class WebDriverTools
 {
     public static WebDriver getDriver(String browserType)
@@ -13,12 +15,14 @@ public class WebDriverTools
             WebDriverManager.chromedriver().setup();
             WebDriver driver= new ChromeDriver();
             driver.manage().window().maximize();
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
             return driver;
         }
         else if (browserType.equalsIgnoreCase("firefox")) {
             WebDriverManager.firefoxdriver().setup();
             WebDriver driver= new FirefoxDriver();
             driver.manage().window().maximize();
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
             return driver;
         }
         else return null;
